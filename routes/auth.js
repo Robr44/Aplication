@@ -35,7 +35,6 @@ router.post('/register', async (req, res) => {
     const { username, password } = req.body;
     const users = readUsersFromFile();
 
-
     const userExists = users.find(user => user.username === username);
     if (userExists) {
         return res.status(400).json({ message: 'El usuario ya existe' });
