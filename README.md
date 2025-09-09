@@ -48,8 +48,8 @@ Este documento describe los endpoints disponibles en la API para gestionar usuar
 
 - **URL**: `/api/auth/register`
 - **Metodo**: `POST`
-- **Descripción****: Crea un nuevo usuario en el sistema.
-- ** - ** Body ****:
+- **Descripción**: Crea un nuevo usuario en el sistema.
+- ** - ** Body **:
   ```json
   {
     "username": "usuario",
@@ -60,7 +60,7 @@ Este documento describe los endpoints disponibles en la API para gestionar usuar
 400: El usuario ya existe.
 
 ## **Inicio de sesión**
-- **URL****: `/api/auth//login`
+- **URL**: `/api/auth/login`
 - **Metodo**: `POST`
 - **Descripción**: Permite a un usuario autenticarse.
 - ** Body **:
@@ -105,7 +105,7 @@ Respuestas:
 
 ## Crear un nuevo bootcamp
 - **URL**: `/api/auth/bootcamps/create`
-- **- **Metodo****: `POST`
+- **- **Metodo**: `POST`
 - **Autenticación**: Bearer Token
 - **Descripción**: Crea un nuevo bootcamp.
  - ** Body **:
