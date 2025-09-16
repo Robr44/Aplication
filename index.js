@@ -8,12 +8,16 @@ const app = express();
 const corsOptions = {
     credentials: true,
     origin: [
-        'http://localhost:5173',            // local
-        'https://frotend-react-app.vercel.app/'   // producción
-    ]
+        'http://localhost:5173',            
+        'https://mi-frontend.vercel.app'   
+    ],
+    allowedHeaders: ['Content-Type','Authorization'],
+    methods: ['GET','POST','PUT','DELETE','OPTIONS']
 };
 
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // preflight
+
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 
