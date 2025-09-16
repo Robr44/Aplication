@@ -9,7 +9,7 @@ const corsOptions = {
     credentials: true,
     origin: [
         'http://localhost:5173',            // local
-        'https://mi-frontend.vercel.app'   // producción
+        'https://frotend-react-app.vercel.app/'   // producción
     ]
 };
 
