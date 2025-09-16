@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 
-const SECRET_KEY = 'mysecretkey'; 
+const SECRET_KEY = process.env.SECRET_KEY; 
 const BOOTCAMPS_FILE = './data/bootcamps.json';
 
 // Leer el archivo JSON de usuarios
