@@ -9,7 +9,7 @@ const corsOptions = {
     credentials: true,
     origin: [
         'http://localhost:5173',            
-        'https://mi-frontend.vercel.app'   
+        'https://frotend-react-app.vercel.app/register'   
     ],
     allowedHeaders: ['Content-Type','Authorization'],
     methods: ['GET','POST','PUT','DELETE','OPTIONS']
